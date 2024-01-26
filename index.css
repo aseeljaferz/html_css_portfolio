@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav_container{
+    height: 7vh;
+    width: 99.4vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0.1cm;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.8); 
+    transition: background 0.5s ease; 
+}
+@media (max-width: 768px) {
+    .nav_container {
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    .nav_divisions{
+        display: flex;
+    }
+}
+
+.logo_name{
+    color: rgb(182,54,255);
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.nav_divisions{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav_button{
+    padding: 0.5rem 0.6rem;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: #c1c1c1;
+    cursor: pointer;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.218),inset -20px -20px 60px #fff;
+    transition: all 500ms ease;
+}
+
+.nav_button:hover{
+    padding: 0.5rem 0.6rem;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: #c1c1c1;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.218),inset -1px -1px 10px #fff;
+}
+
+.welcome_view{
+    position: absolute;
+    top: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(/asserts/background.jpg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:800px;
+    width: 100vw;
+}
+
+.welcome_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome_text h2{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.welcome_text span{
+    color: rgb(182,54,255);
+}
+
+.welcome_text p{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+    margin-top: -30px;
+}
+
+.welcome_view a{
+    border: 1px solid rgb(182,54,255);
+    display: inline-block;
+    width: fit-content;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    cursor: pointer;
+    background: rgb(182,54,255);
+    color: #fff;
+    box-shadow: 20px 20px 60px rgb(202, 143, 236), -20px -20px 60px #fff;
+    transition: all 500ms ease;
+
+}
+
+.welcome_view a:hover{
+    border: 1px solid rgb(198, 117, 249);
+    background: rgb(198, 117, 249);
+}
+
+.welcome_view a:active{
+    border: 1px solid black;
+    background: rgb(16, 2, 24);
+}
+
+.about_me_container{
+    position: absolute;
+    top: 91vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_me_heading {
+    width: 100vw;
+    text-align: center;
+    padding: 0 0 2% 0;
+    border-bottom: 1px solid rgb(229,235,242);
+}
+
+.about_me_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-top: 2%;
+    /* border: 1px solid black; */
+}
+
+.about_me_para{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 35vw;
+}
+
+.about_me_para h3{
+    font-size:18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.about_me_para p{
+    font-size: 16px;
+    color: #999fb3;
+    padding: 5px 0px 43px;
+    text-transform: initial;
+    text-align: justify;
+    line-height: 1.8;
+} 
+
+.line_sep{
+    border-bottom: 1px solid rgb(229,235,242);
+}
+
+.about_me_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about_me_profile{
+    height: 50vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.about_me_figure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:url(/asserts/profile_pic/aseeljafer.jpeg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 20vw;
+    height: 100vh;
+}
+
