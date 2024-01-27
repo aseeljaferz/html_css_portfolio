@@ -140,7 +140,7 @@ body {
 
 .about_me_container{
     position: absolute;
-    top: 93.2vh; 
+    top: 100vh; 
     height: auto;
     width: 100vw;
     display: flex;
@@ -235,7 +235,65 @@ body {
     font-size: 30px;
 }
 
+@media (max-width: 320px){
+
+    .about_me_container{
+        position: absolute;
+        top: 130vh; 
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom:1px solid rgb(229,235,242);
+    }
+
+    .about_me_content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: -10%;
+    }
+
+    .about_me_details{
+        width: 85vw;
+    }
+
+    .detail p{
+        margin-top: -5%;
+    }
+
+    .about_me_para h3{
+        width: 85vw;
+        text-align: left;
+    }
+
+    .about_me_para p{
+        font-size: 16px;
+        color: #999fb3;
+        text-transform: initial;
+        line-height: 1.8;
+        width: 85vw;
+        block-size: fit-content;
+        text-align: left;
+    } 
+
+    .about_me_figure img{
+        width: 90vw;
+        background-size:cover;
+        background-position: center;
+        background-color: #c1c1c1;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .about_me_container{
+        padding-bottom: 8%;
+    }
+
     .about_me_content{
         display: flex;
         flex-direction: column;
@@ -349,7 +407,7 @@ body {
 @media (max-width: 768px) {
     .footer_contact_container{
         position: absolute;
-        top: 265vh;
+        top: 280vh;
     }
     .footer_contact{
         display: flex;
