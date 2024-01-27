@@ -17,10 +17,8 @@
         <nav class="nav_container">
             <div class="logo_name">Aseel Jafer</div>
             <div class="nav_divisions">
-                <span class="nav_button">EDUCATION</span>
-                <span class="nav_button">SKILLS</span>
-                <span class="nav_button">PROFILE</span>
-                <span class="nav_button">CONTACT</span>
+                <a href="#aboutMe" class="nav_button">ABOUT ME</a>
+                <a href="#contact" class="nav_button">CONTACT</a>
             </div>
         </nav>
     </header>
@@ -32,22 +30,22 @@
         </article>
     </section>  
     <main>
-        <section class="about_me_container">
+        <section class="about_me_container" id="aboutMe">
             <h1 class="about_me_heading"><p>ABOUT ME</p></h1>
             <article class="about_me_content">
                 <article class="about_me_para">
                     <h3>I am currently an undergraduate student at Kongu Engineering College, eagerly anticipating the launch of my career in the dynamic field of technology. My name is Aseel Jafer Z, and I am passionately pursuing my studies while cultivating a keen interest in Full Stack Development, particularly in the MERN stack.</h3>
                     <p> Despite being in the early stages of my academic journey, I have proactively engaged with web development, gaining foundational knowledge in MongoDB, Express.js, React, and Node.js. Driven by a desire to explore innovative solutions and contribute to the ever-evolving world of technology, I am committed to continuous learning and enthusiastic about applying my theoretical knowledge to practical projects. As I progress through my academic endeavors, I am eager to bridge the gap between classroom learning and real-world application, positioning myself for a successful transition into Full Stack Development upon graduation.</p>
                     <article class="about_me_details">
-                        <section>
+                        <section class="detail">
                             <h3>Name</h3>
                             <p>Aseel Jafer Z</p>
                         </section>
-                        <section>
+                        <section class="detail">
                             <h3>Phone</h3>
                             <p>8056699497</p>
                         </section>
-                        <section>
+                        <section class="detail">
                             <h3>Email</h3>
                             <p>aseeljafer@gmail.com</p>
                         </section>
@@ -67,7 +65,35 @@
             </article>
         </section>
     </main>  
-    <footer></footer>
+    <footer class="footer_contact_container" id="contact">
+        <h1>CONTACT ME</h1>
+        <article class="footer_contact">
+            <form class="contact_form" action="">
+                <input type="text" name="name" placeholder="Name*" class="name">
+                <input type="email" name="email" class="email" placeholder="Email">
+                <input type="text" name="subject" class="subject" placeholder="Subject">
+                <textarea name="maeeage" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="submit" class="submit">
+            </form>
+            <section class="contact_me">
+                <article class="footer_detail">
+                    <h4>Aseel Jafer Z</h4>
+                    <p>MERN Stack Developer</p>
+                </article>
+                <article class="footer_detail">
+                    <h4>Phone</h4>
+                    <p>8056699497r</p>
+                </article>
+                <article class="footer_detail">
+                    <h4>Email</h4>
+                    <p>aseeljafer@gmail.com</p>
+                </article>
+            </section>
+        </article>
+        <article class="copyright">
+            &copy; copyright yourname. design and developed by
+        </article>
+    </footer>
 
 </body>
 
