@@ -234,6 +234,19 @@ body {
     color: rgb(39,118,232);
     font-size: 30px;
 }
+@media only screen and (max-device-width: 480px) {
+    .about_me_container{
+        position: absolute;
+        top: 130vh; 
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom:1px solid rgb(229,235,242);
+    }
+}
 
 @media (max-width: 320px){
 
@@ -330,6 +343,9 @@ body {
         background-color: #c1c1c1;
         cursor: pointer;
     }
+    .about_me_profile{
+        margin-left: 10px;
+    }
 
 }
 
@@ -404,10 +420,20 @@ body {
     color: rgb(154,161,179);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 480px) {
+    .about_me_profile{
+        margin-left: 20px;
+    }
     .footer_contact_container{
         position: absolute;
         top: 280vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_contact_container{
+        position: absolute;
+        top: 380vh;
     }
     .footer_contact{
         display: flex;
