@@ -23,6 +23,7 @@ body {
     .nav_container {
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         height: auto;
         width: 95.5vw;
     }
@@ -140,7 +141,7 @@ body {
 
 .about_me_container{
     position: absolute;
-    top: 100vh; 
+    top: 130vh; 
     height: auto;
     width: 100vw;
     display: flex;
@@ -153,7 +154,7 @@ body {
 .about_me_heading {
     width: 100vw;
     text-align: center;
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
     border-bottom: 1px solid rgb(229,235,242);
 }
 
@@ -234,25 +235,17 @@ body {
     color: rgb(39,118,232);
     font-size: 30px;
 }
-@media only screen and (max-device-width: 480px) {
-    .about_me_container{
-        position: absolute;
-        top: 130vh; 
-        height: auto;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom:1px solid rgb(229,235,242);
+@media (max-width: 768px) {
+    .welcome_view{
+        top: 9vh;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 375px){
 
     .about_me_container{
         position: absolute;
-        top: 130vh; 
+        top: 400vh; 
         height: auto;
         width: 100vw;
         display: flex;
@@ -302,16 +295,24 @@ body {
 }
 
 @media (max-width: 768px) {
-
     .about_me_container{
+        position: absolute;
+        top: 101vh; 
+        height: auto;
+        width: 100vw;
         padding-bottom: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom:1px solid rgb(229,235,242);
     }
 
     .about_me_content{
         display: flex;
         flex-direction: column;
-        align-items: start;
-        margin-left: -10%;
+        align-items: center;
+        margin-left: -5%;
     }
 
     .about_me_details{
@@ -326,6 +327,10 @@ body {
         width: 85vw;
     }
 
+    .about_me_para{
+        margin-left: -180px;
+    }
+
     .about_me_para p{
         font-size: 16px;
         color: #999fb3;
@@ -337,7 +342,7 @@ body {
     } 
 
     .about_me_figure img{
-        width: 90vw;
+        width: 80vw;
         background-size:cover;
         background-position: center;
         background-color: #c1c1c1;
@@ -351,7 +356,7 @@ body {
 
 .footer_contact_container{
     position: absolute;
-    top: 185vh;
+    top: 295vh;
     width: 100vw;
     background-color: rgb(249,251,253);
     display: flex;
@@ -420,20 +425,20 @@ body {
     color: rgb(154,161,179);
 }
 
-@media only screen and (max-device-width: 480px) {
+@media (max-width: 480px) {
     .about_me_profile{
         margin-left: 20px;
     }
     .footer_contact_container{
         position: absolute;
-        top: 280vh;
+        top: 260vh;
     }
 }
 
 @media (max-width: 768px) {
     .footer_contact_container{
         position: absolute;
-        top: 380vh;
+        top: 300vh;
     }
     .footer_contact{
         display: flex;
